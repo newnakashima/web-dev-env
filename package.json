@@ -1,0 +1,20 @@
+{
+  "name": "webfront-env",
+  "version": "1.0.0",
+  "description": "web fontend developing environment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:pug":  "pug src/pug --out dist",
+    "build:scss": "sass src/scss:dist/css",
+    "build:ts":   "tsc src/ts/*.ts --outDir dist/js",
+    "build:prettier": "prettier --write dist/* dist/**/*",
+    "build": "npm run build:pug; npm run build:scss; npm run build:ts; npm run build:prettier"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "pug": "^2.0.4"
+  }
+}
