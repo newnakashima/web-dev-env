@@ -1,13 +1,13 @@
 $color: #123456;
 
-$colors: 'blue', 'green', 'red';
+$colors: "blue", "green", "red";
 
 body {
-    color: $color;
+  color: $color;
 }
 
 @for $i from 1 through 3 {
-    .hoge-#{$i} {
-        backgroud-color: nth($colors, $i);
-    }
+  .hoge-#{$i} {
+    background-color: nth($colors, $i);
+  }
 }
