@@ -6,3 +6,4 @@ class Hoge {
 
 let hoge = new Hoge();
 hoge.fuga("fugafuga");
+hoge.fuga("piyopiyo");
