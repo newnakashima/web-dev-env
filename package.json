@@ -9,7 +9,7 @@
     "build:scss": "sass src/scss:dist/css",
     "build:ts":   "tsc src/ts/*.ts --outDir dist/js",
     "build:prettier": "prettier --write dist/* dist/**/*",
-    "build": "npm run build:pug; npm run build:scss; npm run build:ts; npm run build:prettier"
+    "build": "npm run build:pug && npm run build:scss && npm run build:ts && npm run build:prettier"
   },
   "author": "",
   "license": "ISC",
